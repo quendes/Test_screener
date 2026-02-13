@@ -1,10 +1,3 @@
- (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
-diff --git a/README.md b/README.md
-new file mode 100644
-index 0000000000000000000000000000000000000000..bbe4196dd5bd74284ccdddb508d08c314181b3cb
---- /dev/null
-+++ b/README.md
-@@ -0,0 +1,46 @@
 +# Binance Futures 1m Screener (проторговка/запил)
 +
 +Скрипт сканирует фьючерсы Binance (USDT perpetual, 1m), ищет графики с трендом и мелкими откатами (похожими на ваши примеры), рисует свечной скриншот и отправляет его в Telegram-бота.
